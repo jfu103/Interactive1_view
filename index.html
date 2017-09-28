@@ -1,182 +1,147 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <html lang="en"> <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>exercise 4 v.1</title>
+<!doctype html>
+<html>
 
-	<link href="https://fonts.googleapis.com/css?family=Sarpanch|Audiowide" rel="stylesheet">
+<head>
+	<title>hello world.</title>
 
 	<style>
-		body {
-			background-color: none;
-		}
-		.bigwrapper{
-			max-width:90%;
-		}
-		.headerrun {
-			background-color: #ff1c1c;
-			width: 100%;
-			height: 200px;
-			position: absolute;
-			margin-top: 200px;
-			font-size: 75px;
-			color: white;
-			font-family: 'Audiowide';
-			padding:20px;
+	body {
+			background: -webkit-linear-gradient(315deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+			background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+			color: #f7f7f7;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
 		}
 		
-		.legible {
-			width:100vw;
-			text-align: justify;
-			position: absolute;
-			top: 220px;
-			left: 550px;
-			font-family: courier;
-			line-height: 85%;
-			letter-spacing: -2px;
-			color:white;
-			opacity:.2;
-		}
-		
-		.legible:hover {
-			opacity: 1;
-			color:black;
-			font-family: monospace;
-			text-align: justify;
-			letter-spacing:2px;
-			left:800px;
-			width:10000px;
-		}
-		
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-			}
-		}
-		
-		.animate-flicker {
-			animation: fadeIn 1s infinite alternate;
-			animation-duration: 3s;
-			opacity: .5;
-			letter-spacing: -5px;
-			margin-top: 10px;
-			display: inline;
-		}
-		
-		.animate-flicker2 {
-			animation: fadeIn 2s infinite alternate;
-			animation-duration: 4s;
-			opacity:inherit;
-		}
-		
-		.animate-flicker3 {
-			animation:fadeIn 1s infinite alternate;
-			animation-duration: 2s;
-			opacity:inherit;
-		}
-		
-		.header {
-			font-size: 200px;
-			position: relative;
-			float: left;
-			font-family: sans-serif;
-			color: white;
-			word-spacing: auto;
-		}
-		
-		.wrapper {
-			font-family: 'Sarpanch';
-			font-size: 12px;
-			padding-left: 10px;
-			-webkit-transform: rotate(90deg);
-			-moz-transform: rotate(90deg);
-			-o-transform: rotate(90deg);
-			-ms-transform: rotate(90deg);
-			transform: rotate(90deg);
-			position: absolute;
-			top: -700px;
-			animation: 
-		}
-		
-		.first {
-			margin-top: 20px;
-			max-width: 100px;
-			text-align: right;
-			line-height: 20px;
-			letter-spacing: 30px;
-		}
-		
-		.second {
-			margin-top: 20px;
-			max-width: 100px;
-			text-align: right;
-			line-height: 20px;
-			letter-spacing: 25px;
-		}
-		
-		.third {
-			margin-top: 10px;
-			max-width: 100px;
-			text-align: right;
-			line-height: 20px;
-			letter-spacing: 25px;
-		}
-		
-		.wrapper2 {
-			font-family: 'Sarpanch';
-			opacity: .5;
-			font-size: 12px;
-			padding-left: 5px;
-			-webkit-transform: rotate(90deg);
-			-moz-transform: rotate(90deg);
-			-o-transform: rotate(90deg);
-			-ms-transform: rotate(90deg);
-			transform: rotate(90deg);
-			position: relative;
-			float: right;
-			top: -750px;
-		}
-		
-		.wrapper3 {
-			font-family: 'Sarpanch';
-			opacity: .2;
-			font-size: 12px;
-			padding-left: 5px;
-			position: relative;
-			float: left;
-			top: -1000px;
+		.imgcontainer {
+			margin-top: 5px;
 			text-align: center;
+			padding-right: 40px;
 		}
+		
+		.bouncing {
+			margin-left: 50px;
+			margin-top: -15px;
+		}
+		
+		footer {
+			font-size: 10px;
+			text-align: right;
+			max-width: 400px;
+			padding-top: 5px;
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+		
+		.desc {
+			font-family: helvetica;
+			font-size: 10px;
+			text-align: justify;
+			width: 20vw;
+			margin:auto;
+			margin-bottom: 20px;
+		}
+		
+		.container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-ms-flex-line-pack: center;
+			align-content: center;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width: 60vw;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		
+		a:visited {
+			text-decoration: none;
+			color: white;
+		}
+		
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		
+		h1 {
+			text-align: center;
+			letter-spacing: -2px;
+			font-family: 'helvetica';
+		}
+		
+		.button {
+			-webkit-box-flex: 1;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			margin: 10px;
+			padding: 20px;
+			border: 2px solid #f7f7f7;
+			text-align: center;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+			-webkit-transition: .3s;
+			transition: .3s;
+			text-decoration: none;
+		}
+		
+		.button:after {
+			position: absolute;
+			-webkit-transition: .3s;
+			transition: .3s;
+			content: '';
+			width: 0;
+			left: 50%;
+			bottom: 0;
+			height: 3px;
+			background: #f7f7f7;
+		}
+		
+		.button:after {
+			left: 0;
+		}
+		
+		.button:nth-of-type(3):after {
+			right: 0;
+			left: auto;
+		}
+	}
+	.button:hover {
+		cursor: pointer;
+	}
+	.button:hover:after {
+		width: 100%;
+		left: 0;
+	}
+	.button:hover:nth-of-type(4):after {
+		top: calc(100% - 3px);
+	}
 	</style>
 </head>
 
 <body>
-	<div class="bigwrapper">
-	<div class="headerrun"> the bill <br>of rights*</div>
-	<div class="wrapper animate-flicker">
-		<div class="first">
-			Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.
-		</div>
-		<div class="second">A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.
-		</div>
-		<div class="third">The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no warrants shall issue, but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.</div>
+	<div class="imgcontainer"><img src="welcome_right.png" height="40px">
+		<div class="bouncing"><img src="ARTTRADEgaia.gif"></div>
 	</div>
-	<div class="wrapper2 animate-flicker3">
-		<div class="first">
-			Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.
-		</div>
-		<div class="second">A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.
-		</div>
-		<div class="third">The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no warrants shall issue, but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.</div>
+	<h1>INTERACTIVE 1 // PROJECT 1</h1>
+	<div class="desc">Through a series of coding exercises, create a collection of HTML compositions that typesets the U.S. Bill of Rights. Use the new properties you learn each week to re-interpret the text in increasingly creative, unexpected ways. Created by Jiaqi Fu for Fall 2017 Interactive 1 w/Max Batt.  </div>
+	<div class="container">
+		<a class="button" href="ex1_v3.html">version 0.1</a>
+		<a class="button" href="ex3_v2.html">version 0.2</a>
+		<a class="button" href="ex3_v1.html">version 0.3</a>
+		<a class="button" href="ex4fin_v1.html">version 1.0</a>
 	</div>
-	<div class="wrapper3 animate-flicker2" style="letter-spacing: 50px;top:-1200px;">
-		<div class="first">
-			Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.
-		</div>
-		<div class="second">A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.
-		</div>
-		<div class="third">The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no warrants shall issue, but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.</div>
-	</div>
-	<div class="legible">
-		Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances. A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed. No soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war, but in a manner to be prescribed by law. The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no warrants shall issue, but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized. No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a grand jury, except in cases arising in the land or naval forces, or in the militia, when in actual service in time of war or public danger; nor shall any person be subject for the same offense to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation. In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the state and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the assistance of counsel for his defense. In suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise reexamined in any court of the United States, than according to the rules of the common law. Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted. The enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people. The powers not delegated to the United States by the Constitution, nor prohibited by it to the states, are reserved to the states respectively, or to the people.
-	</div>
-	</div>
-</body> </html>
+	<footer>button css by @thejasonpower on codepen.io<br> pixel art created by j.fu.
+	</footer>
+</body>
+
+</html>
