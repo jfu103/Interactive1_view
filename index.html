@@ -40,7 +40,7 @@
 			text-align: justify;
 			width: 20vw;
 			margin:auto;
-			margin-bottom: 20px;
+			position:relative;
 		}
 		
 		.container {
@@ -57,10 +57,15 @@
 			align-content: center;
 			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
-			width: 60vw;
+			width: 100vh;
 			max-width: 1200px;
 			margin: 0 auto;
+			min-height: 100vh;
 		}
+		
+		.buttoncontainer {
+			display:flex;
+		}	
 		
 		a:visited {
 			text-decoration: none;
@@ -70,6 +75,10 @@
 		a {
 			text-decoration: none;
 			color: white;
+		}
+		
+		.contact:hover {
+			border-bottom: 2px dotted white;
 		}
 		
 		h1 {
@@ -129,18 +138,20 @@
 </head>
 
 <body>
+	<div class="container">
 	<div class="imgcontainer"><img src="welcome_right.png" height="40px">
 		<div class="bouncing"><img src="ARTTRADEgaia.gif"></div>
 	</div>
 	<h1>INTERACTIVE 1 // J.FU</h1>
-	<div class="desc">created for cca fall2017 interactive 1 w/ max batt.<br></div>
-	<div class="container">
-		<a class="button" href="ex1_v3.html">proj 0.1</a>
+	<div class="desc">created for cca fall2017 interactive 1 w/ max batt.
+		contact// <a href="mailto:jfu3@cca.edu" class="contact">email</a> or <a href="https://github.com/jfu103" class="contact">github</a></div>
+		
+		<div class="buttoncontainer"><a class="button" href="ex1_v3.html">proj 0.1</a>
 		<a class="button" href="ex3_v2.html">proj 0.2</a>
 		<a class="button" href="ex3_v1.html">proj 0.3</a>
-		<a class="button" href="ex4fin_v1.html">proj 1.0</a>
+			<a class="button" href="ex4fin_v1.html">proj 1.0</a></div>
 	</div>
-	<footer>button css by @thejasonpower on codepen.io<br> pixel art created by j.fu.
+	<footer>button css by @thejamespower on codepen.io<br> pixel art created by j.fu
 	</footer>
 </body>
 
