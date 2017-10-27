@@ -94,8 +94,6 @@ function setup() {
 
 
 function draw() {
-	fill(0);
-	rect (0,0, width, 200);
 	
 	//COUNTERdraw
 
@@ -203,7 +201,7 @@ function draw() {
 	textSize(12);
 	fill(255);
 	
-	text("Features such as movement may take time to develop. Your DNA replicates all the time, but it only gives you significant mutations about once every 50 years. Significant, but not necessarily helpful.", width-1150,5, 400, 100);
+	text("Features such as movement may take time to develop.Your DNA replicates all the time, but it only gives you significant mutations about once every 50 years. Significant, but not necessarily helpful.", width-1150,5, 400, 100);
 
 }
 
