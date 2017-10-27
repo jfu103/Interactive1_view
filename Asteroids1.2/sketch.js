@@ -203,7 +203,6 @@ function draw() {
 	textSize(12);
 	fill(255);
 	
-	
 	text("Your DNA replicates all the time, but it only gives you significant mutations about once every 50 years. By significant, we mean 'not necessarily helpful'.", width-1150,5, 400, 100);
 
 }
