@@ -101,7 +101,7 @@ function draw() {
 		number5s = floor(random(20));
 		counter = 0;
 		console.log(number5s);
-		text("Viral RNA replication complete. Expect changes.", 500, 250);
+//		text("Viral RNA replication complete. Expect changes.", 500, 250);
 	}
 	counter ++;
 
