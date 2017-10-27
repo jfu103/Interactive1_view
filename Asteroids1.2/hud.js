@@ -61,9 +61,12 @@ function Hud() {
 //      text(finalMsg[randomIndex], (width / 2) - 100, height / 2, 200, 400);
 		image(finalImg[randomIndex], (width/2), height/2);
 		imageMode(CENTER);
+		textSize(50);
+		fill(255,0,0);
+		frameRate(1);
+//		text ("GAME OVER", (width/2), height/2);
 	} 
   }
-
   
   function drawLives() {
     push();

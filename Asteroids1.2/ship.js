@@ -30,7 +30,7 @@ function Ship(pos, r) {
     scope.setRotation(press ? -0.08 : 0);
   });
   input.registerAsListener(UP_ARROW, function(char, code, press) {
-    scope.setAccel(press ? (0.1/random(1)) : 0);
+    scope.setAccel(press ? (0.1+(number5s/2)) : 0);
   });//IMPORTANT
 
   this.update = function() {

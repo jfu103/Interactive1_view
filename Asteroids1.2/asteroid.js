@@ -18,7 +18,7 @@ function Asteroid(pos, r, size) {
   this.size = size;
   switch(size) {
     case 1:
-      this.vel.mult(1.5); break;
+      this.vel.mult(1.5*number5s); break;
     case 0:
       this.vel.mult(2); break;
   }

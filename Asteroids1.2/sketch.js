@@ -17,11 +17,13 @@ var asteroidBig;
 var randomIndex;
 //var scoreImg;
 var counter;
-var chooseNumber;
+var chooseNumber = 0;
 var finalImg = [];
 var cosmicAlien;
 let years = 0;
-
+var bgmusic;
+var number5s;
+var rePlay = 0;
 
 
 function preload() {
@@ -31,7 +33,7 @@ function preload() {
 	finalImg[1] = loadImage("assets/msg1.png");
 	finalImg[2] = loadImage("assets/msg2.png");
 
-	
+
 	//load font Cosmic Alien by Freaky Fonts 
 
 	cosmicAlien = loadFont("assets/ca.otf")
@@ -45,7 +47,8 @@ function preload() {
 	for (var i = 0; i < 3; i++) {
 		explosionSoundEffects[i] = loadSound('audio/explosion-' + i + '.mp3');
 	}
-
+	
+	
 	for (var i = 0; i < 3; i++) {
 		imgGoodGuy = loadImage("assets/good-guy.png");
 	}
@@ -53,6 +56,7 @@ function preload() {
 	for (var i = 0; i < 3; i++) {
 		asteroidBig = loadImage("assets/asteroid.png");
 	}
+	
 	//	scoreImg = loadImage("assets/score.png");
 }
 var score = 0;
@@ -74,26 +78,35 @@ function setup() {
 	//font setup
 
 	textFont(cosmicAlien);
-	//text
 
 	//YEARS counting
 	function timeIt() {
-		years++;
+		years ++;
 	}
 
-	setInterval(timeIt, 5);
-
+	// set a fixed interval since the code is in the setup block
+	setInterval(timeIt, 100);
+	
+	// setInterval(function () {
+	// 	chooseNumber = floor(random(40));
+	// }, 3000);
 }
 
 
 function draw() {
+	fill(0);
+	rect (0,0, width, 200);
+	
 	//COUNTERdraw
 
-	counter++;
-	if (counter == 60) {
+	if (counter == 300) {
+		number5s = floor(random(20));
 		counter = 0;
-
+		console.log(number5s);
+		text("Viral RNA replication complete. Expect changes.", 500, 250);
 	}
+	counter ++;
+
 	// Handles the round loss, destruction of ship and round restart when the
 	// ship contacts an asteroid.
 	for (var i = 0; i < asteroids.length; i++) {
@@ -177,6 +190,7 @@ function draw() {
 		dust[i].render();
 	}
 	//DRAW TEXT 
+	fill(68,197,83);
 	textSize(20);
 	text("Viruses Eliminated", (width - 660), 5, 100, 100);
 	text("Years Elapsed", (width - 300), 5, 100, 100);
@@ -184,15 +198,18 @@ function draw() {
 	textSize(50);
 	//score draw
 	text(score, (width - 410), 40);
-	fill(255);
 	noStroke();
 	text(years, (width - 10), 40);
 	textSize(12);
+	fill(255);
+	
+	
+	text("Your DNA replicates all the time, but it only gives you significant mutations about once every 50 years. By significant, we mean 'not necessarily helpful'.", width-1150,5, 400, 100);
 
 }
 
 function spawnAsteroids() {
-	for (var i = 0; i < level + 20*random(10); i++) { //IMPORTANT # OF ENEMIESf
+	for (var i = 0; i < level + 20 * random(10); i++) { //IMPORTANT # OF ENEMIESf
 		asteroids.push(new Asteroid(null, null, 2));
 	}
 }
