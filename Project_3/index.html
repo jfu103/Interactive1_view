@@ -3,20 +3,27 @@
 <head>
 	<title>BUB. Reality, Built for You.</title>
 
-	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="sketch.js"></script>
+	<script src="mapScript.js"></script>
 	
 	
 	<link rel="stylesheet" href="mainStyle.css">
-	
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+	<link rel="stylesheet" href="mapStyle.css">
+<!--	 Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+
 </head>
 
 <body>
+<!--
 
 <link href='style.css' rel='stylesheet' type='text/css'>
+-->
 
   
 <header class="main_h">
@@ -29,6 +36,7 @@
             <span></span>
             <span></span>
         </div>
+<!--
 
         <nav>
             <ul>
@@ -38,21 +46,17 @@
                 <li><a href=".sec04">Section 04</a></li>
             </ul>
         </nav>
+-->
 
     </div> <!-- / row -->
 
 </header>
 
 <div class="hero">
-
-	<div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoia3YwOXkiLCJhIjoiY2piNWEwc3hiMmNncjMzbzZ4ZjhxbHF4cSJ9.tJI5mGPvaeW-kdfHrknlKA';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/light-v9'
-});
-</script>
+	
+	
+ <div id="mapid"></div>
+	
     
 	<div class="topHeader">visit san francisco. <br><span class="liber">sans-liberals.</span></div>
 	<div class="w">
