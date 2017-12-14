@@ -37,7 +37,7 @@ h1 {
 	right: 0;
 	bottom: 0;
 	overflow: hidden;
-	background: rgba(66, 66, 66, 0.5) url("https://github.com/jfu103/Interactive1_view/blob/master/Project_3/assets/sfMarket_after.jpg?fit=crop&fm=jpg&h=1500&q=75&w=2400") repeat center center fixed;
+	background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/tdYtkC9.jpg?fit=crop&fm=jpg&h=1500&q=75&w=2400") repeat center center fixed;
 	background-position: 50% 100%;
 	background-size: cover;
 	position: relative;
@@ -57,7 +57,7 @@ h1 {
 	padding: 2px;
 	-webkit-transition: all 1.3s ease-in-out;
 	transition: all 1.3s ease-in-out;
-background: rgba(66, 66, 66, 0.5) url("https://github.com/jfu103/Interactive1_view/blob/master/Project_3/assets/sfMarket_after.jpg") repeat center center fixed;
+background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/Y86uCHA.jpg") repeat center center fixed;
 	background-size: cover;
 	background-position: 50% 100%;
 	border-radius: 0%;
