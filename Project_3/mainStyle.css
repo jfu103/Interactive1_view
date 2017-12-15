@@ -1029,6 +1029,7 @@ p {
 
 body {
 	font-family: "Open Sans", sans-serif;
+	color:white;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	background: rgba(52, 247, 231, 1);
@@ -1039,6 +1040,7 @@ body {
 	background: -ms-linear-gradient(top, rgba(52, 247, 231, 1) 0%, rgba(106, 133, 242, 1) 100%);
 	background: linear-gradient(to bottom, rgba(52, 247, 231, 1) 0%, rgba(106, 133, 242, 1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34f7e7', endColorstr='#6a85f2', GradientType=0);
+	
 }
 
 .animLogo {
