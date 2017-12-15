@@ -6,11 +6,27 @@
 	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 -->
-	
-	
-	<script src="sketch.js"></script>
+
+
+	<script src="mapScript.js"></script>
 	<link rel="stylesheet" href="mainStyle.css">
 	<style>
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: #78f2f2;
+  }
+		@keyframes appear {
+			0% {
+				opacity: 0;
+				transform: scale(0.5) translate(-100%, -100%);
+			}
+			50% {
+				opacity: .5;
+			}
+		}
+		
 		.image {
 			background-image: url(assets/mapBG.png);
 			background-size: cover;
@@ -18,35 +34,23 @@
 			min-width: 100vw;
 		}
 		
-		.staticLogo {
-			margin-left: -10px;
-			margin-top: -100px;
-			top: 90%;
-			left: 85%;
-			position: absolute;
-			font-family: "Open Sans";
-			font-size: 75px;
-			color: white;
-			letter-spacing: -5px;
-		}
-		
 		.staticText {
-			font-family: "Open Sans";
-			font-size: 10px;
-			color: white;
-			top: 
+			top: 95%;
+			left: 88%;
+			display: inline;
+			text-align: right;
 		}
 	</style>
 </head>
 
 <body>
 
-
-
-	<a href="demo.html"><div class="image"></div></a>
-	<div class="staticLogo">bub. </div>
-	<div class="staticText">location data loaded.<br> please confirm your location. </div>
-	<div class="circle1" style="top:90%; left:85%;"></div>
-	
+		<a href="demo.html">
+			<div class="image"></div>
+		</a>
+		<div class="staticLogo">bub. </div>
+		<div class="staticText">location data loaded. <br>please confirm your location. </div>
+		<div class="circle1" style="top:90%; left:85%;"></div>
+<!--	<div class="dot"></div>-->
 
 </body></html>

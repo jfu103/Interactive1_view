@@ -1,5 +1,6 @@
+/*https://imgur.com/a/tG8FP*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
 @import "compass/css3";
 body,
@@ -26,64 +27,6 @@ h1 {
 */
 
 
-.w {
-	margin: 0 auto;
-	white-space: nowrap;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden;
-	background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/tdYtkC9.jpg?fit=crop&fm=jpg&h=1500&q=75&w=2400") repeat center center fixed;
-	background-position: 50% 100%;
-	background-size: cover;
-	position: relative;
-	z-index: 3;
-	font-size: 0;
-	min-height: 100vh;
-	min-width: 100vw;
-	
-}
-
-.i {
-	width: 50px;
-	height: 100%;
-	display: inline-block;
-	position: relative;
-	z-index: 4;
-	padding: 2px;
-	-webkit-transition: all 1.3s ease-in-out;
-	transition: all 1.3s ease-in-out;
-background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/Y86uCHA.jpg") repeat center center fixed;
-	background-size: cover;
-	background-position: 50% 100%;
-	border-radius: 0%;
-	/*
-	min-height: 100vh;
-	min-width: 100vw;
-*/
-}
-
-.i:hover {
-	 -webkit-transition: all 0s linear;
-  transition: all 0s linear;
-  opacity: 0;
-}
-
-.h {
-	display: block;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	text-align: center;
-	top: 35px;
-	font-size: 40px;
-	color: beige;
-	text-shadow: 0 5px 17px rgba(87, 87, 80, 0.85);
-}
 
 @-webkit-keyframes noise-anim {
 	0% {
@@ -914,14 +857,6 @@ nav ul a {
 	box-sizing: border-box;
 }
 
-body {
-	color: #8f8f8f;
-	background: white;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
-	-webkit-font-smoothing: antialiased;
-}
-
 a {
 	text-decoration: none;
 }
@@ -1093,8 +1028,11 @@ p {
 }
 
 body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
 	background: rgba(52, 247, 231, 1);
-	background: -moz-linear-gradient(top, rgba(52, 247, 231, 1) 0%, rgba(106, 133, 242, 1) 100%);
+	background: -moz-linear-gradient(top, rgba(52, 247, 231, 1) 0%, rgba(106, 106, 242, 1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(52, 247, 231, 1)), color-stop(100%, rgba(106, 133, 242, 1)));
 	background: -webkit-linear-gradient(top, rgba(52, 247, 231, 1) 0%, rgba(106, 133, 242, 1) 100%);
 	background: -o-linear-gradient(top, rgba(52, 247, 231, 1) 0%, rgba(106, 133, 242, 1) 100%);
@@ -1131,6 +1069,22 @@ body {
 	left: 50%;
 	margin-top: -150px;
 	margin-left: -50px;
+}
+
+
+.circle3 {
+	width: 500px;
+	height: 500px;
+	background: white;
+	-moz-border-radius: 250px;
+	-webkit-border-radius: 250px;
+	border-radius: 250px;
+	position: absolute;
+	opacity: .2;
+	margin-top: -150px;
+	margin-left: -50px;
+	right:-200px;
+	top:-60px;
 }
 
 @keyframes c2Right {
@@ -1213,4 +1167,24 @@ body {
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	animation-delay: 2s;
+}
+
+
+		.staticLogo {
+			margin-left: -10px;
+			margin-top: -100px;
+			top: 90%;
+			left: 85%;
+			position: absolute;
+			font-family: "Open Sans";
+			font-size: 75px;
+			color: white;
+			letter-spacing: -5px;
+		}
+		
+		.staticText {
+			font-family: "Open Sans";
+			font-size: 10px;
+			color: white;
+			position:absolute;
 }

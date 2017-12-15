@@ -16,7 +16,66 @@
  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
    crossorigin=""></script>
+<style>
+	
+.w {
+	margin: 0 auto;
+	white-space: nowrap;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/dZu4ZKJ.jpg?fit=crop&fm=jpg&h=1500&q=75&w=2400") repeat center center fixed;
+	background-position: 50% 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 3;
+	font-size: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	
+}
 
+.i {
+	width: 50px;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 4;
+	padding: 2px;
+	-webkit-transition: all 1.3s ease-in-out;
+	transition: all 1.3s ease-in-out;
+background: rgba(66, 66, 66, 0.5) url("https://i.imgur.com/ZOQbTHE.jpg") repeat center center fixed;
+	background-size: cover;
+	background-position: 50% 100%;
+	border-radius: 0%;
+	/*
+	min-height: 100vh;
+	min-width: 100vw;
+*/
+}
+
+.i:hover {
+	 -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  opacity: 0;
+}
+
+.h {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	top: 35px;
+	font-size: 40px;
+	color: beige;
+	text-shadow: 0 5px 17px rgba(87, 87, 80, 0.85);
+}</style>
 </head>
 
 <body>
@@ -31,11 +90,6 @@
     <div class="row">
         <a class="logo" href="#">Bub.</a>
 
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 <!--
 
         <nav>
@@ -57,7 +111,7 @@
 	
  <div id="mapid"></div>
 	
-    
+    <div class="circle1" style="top:90%; left:85%; position:absolute; "></div>
 	<div class="topHeader">visit san francisco. <br><span class="liber">sans-liberals.</span></div>
 	<div class="w">
 		<div class="i"></div>
